@@ -27,7 +27,7 @@ export const SCREENS: Record<string, keyof HomeParams> = {
 
 const App = () => {
   return (
-    <ThemeProvider>
+    <ThemeProvider initialTheme={'light'}>
       <AppNavigator/>
     </ThemeProvider>
   );

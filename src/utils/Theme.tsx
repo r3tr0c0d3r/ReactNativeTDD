@@ -7,8 +7,8 @@ interface ITheme {
 
 const ThemeContext = React.createContext<ITheme | null>(null);
 
-const ThemeProvider = ({children}: {children: React.ReactNode}) => {
-  const [theme, setTheme] = React.useState('light');
+const ThemeProvider = ({initialTheme, children}: {initialTheme: string, children: React.ReactNode}) => {
+  const [theme, setTheme] = React.useState(initialTheme);
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
@@ -29,6 +29,6 @@ function useTheme() {
       throw new Error('useTheme should be used within a ThemeProvider')
     }
     return context
-  }
+}
 
 export {useTheme, ThemeProvider}

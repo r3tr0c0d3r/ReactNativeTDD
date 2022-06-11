@@ -5,6 +5,7 @@ import { RootParams } from './NavigationParams'
 import Home from '../screens/Home'
 import Login from '../screens/Login'
 import Counter from '../screens/Counter'
+import EasyButton from '../screens/EasyButton'
 
 const Stack = createStackNavigator<RootParams>()
 
@@ -15,6 +16,7 @@ const AppNavigator = () => {
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Counter" component={Counter} />
+            <Stack.Screen name="EasyButton" component={EasyButton} />
             
             </Stack.Navigator>
         </NavigationContainer>
