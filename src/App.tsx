@@ -18,7 +18,7 @@ export const SCREENS: Record<string, keyof HomeParams> = {
   HOME: 'Home',
   COUNTER: 'Counter',
   LOGIN: 'Login',
-  // EASYBUTTON: 'EasyButton',
+  EASYBUTTON: 'EasyButton',
   // VIDEO: 'Video',
   // MODAL: 'Modal',
   // FLATLIST: 'FlatList',

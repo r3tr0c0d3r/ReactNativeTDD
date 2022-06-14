@@ -2,10 +2,10 @@ const path = require('path')
 
 module.exports = {
   preset: 'react-native',
-  setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
+  setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect',
+  './jest.setup.js',],
   setupFiles: [
-    './node_modules/react-native-gesture-handler/jestSetup.js',
-    './jest.setup.js',
+    './node_modules/react-native-gesture-handler/jestSetup.js'
   ],
   transformIgnorePatterns: [
     'node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation)',
