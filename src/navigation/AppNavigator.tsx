@@ -8,6 +8,7 @@ import Counter from '../screens/Counter'
 import EasyButton from '../screens/EasyButton'
 import List from '../screens/List'
 import ListWithFetch from '../screens/ListWithFetch'
+import Modal from '../screens/Modal'
 
 const Stack = createStackNavigator<RootParams>()
 
@@ -21,6 +22,7 @@ const AppNavigator = () => {
             <Stack.Screen name="EasyButton" component={EasyButton} />
             <Stack.Screen name="List" component={List} />
             <Stack.Screen name="ListWithFetch" component={ListWithFetch} />
+            <Stack.Screen name="Modal" component={Modal} />
             </Stack.Navigator>
         </NavigationContainer>
       );

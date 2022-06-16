@@ -7,6 +7,7 @@ export type RootParams = {
     EasyButton: undefined;
     List: undefined;
     ListWithFetch: undefined;
+    Modal: undefined;
 }
 
 export type HomeParams = {
@@ -16,4 +17,5 @@ export type HomeParams = {
     EasyButton: undefined;
     List: undefined;
     ListWithFetch: undefined;
+    Modal: undefined;
 }

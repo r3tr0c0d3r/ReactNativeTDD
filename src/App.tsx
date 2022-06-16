@@ -19,10 +19,10 @@ export const SCREENS: Record<string, keyof HomeParams> = {
   COUNTER: 'Counter',
   LOGIN: 'Login',
   EASYBUTTON: 'EasyButton',
-  // VIDEO: 'Video',
-  // MODAL: 'Modal',
   LIST: 'List',
   LIST_WITH_FETCH: 'ListWithFetch',
+  // VIDEO: 'Video',
+  MODAL: 'Modal',
 }
 
 const App = () => {
