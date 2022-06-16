@@ -21,8 +21,8 @@ export const SCREENS: Record<string, keyof HomeParams> = {
   EASYBUTTON: 'EasyButton',
   // VIDEO: 'Video',
   // MODAL: 'Modal',
-  // FLATLIST: 'FlatList',
-  // LIST_WITH_FETCH: 'ListWithFetch',
+  LIST: 'List',
+  LIST_WITH_FETCH: 'ListWithFetch',
 }
 
 const App = () => {

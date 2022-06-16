@@ -30,7 +30,7 @@ it('renders correctly', async () => {
   const fakeResponse = Promise.resolve({token: 'fake-token'})
   // @ts-ignore
   global.fetch.mockResolvedValueOnce({
-    json: () => Promise.resolve({token: 'fake-token'}),
+    json: () => fakeResponse,
   })
 
   const username = 'chucknorris'

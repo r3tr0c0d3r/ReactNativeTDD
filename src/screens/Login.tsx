@@ -43,7 +43,7 @@ const useFormSubmission = ({endpoint, data})=> {
 
   React.useEffect(() => {
     if (fetchBody) {
-      console.log(`fetchBody: ${fetchBody}`);
+      // console.log(`fetchBody: ${fetchBody}`);
       (async ()=> {
         dispatch({type: 'START'})
         try {
@@ -55,7 +55,7 @@ const useFormSubmission = ({endpoint, data})=> {
             },
           })
           const responseData = await response.json()
-          console.log(`responseData: ${JSON.stringify(responseData)}`);
+          // console.log(`responseData: ${JSON.stringify(responseData)}`);
           dispatch({type: 'RESOLVE', responseData})
         } catch (error) {
             dispatch({type: 'REJECT', error})
@@ -83,7 +83,7 @@ const Login = () => {
     data: formData,
   })
   const token = responseData?.token
-  console.log(`token: ${token}`);
+  // console.log(`token: ${token}`);
   // @ts-ignore
   React.useEffect(() => {
     if (token) {

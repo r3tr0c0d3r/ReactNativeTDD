@@ -5,6 +5,8 @@ export type RootParams = {
     Login: undefined;
     Counter: undefined;
     EasyButton: undefined;
+    List: undefined;
+    ListWithFetch: undefined;
 }
 
 export type HomeParams = {
@@ -12,4 +14,6 @@ export type HomeParams = {
     Login: undefined;
     Counter: undefined;
     EasyButton: undefined;
+    List: undefined;
+    ListWithFetch: undefined;
 }
